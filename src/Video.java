@@ -26,6 +26,8 @@ public class Video extends ElementoRiproducibile {
 
     @Override
     public void play() {
-        System.out.println("Riproduzione video: " + titolo + " per " + durata + " secondi. Volume: " + volume + ". Luminosità: " + luminosità);
+        for (int i = 0; i < durata; i++) {
+            System.out.println(titolo + " " + "!".repeat(volume) + " " + "*".repeat(luminosità));
+        }
     }
 }
