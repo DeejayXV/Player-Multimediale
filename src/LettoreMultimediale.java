@@ -1,14 +1,18 @@
+import entities.*;
+import interfaces.Riproducibile;
 import java.util.Scanner;
 
 public class LettoreMultimediale {
     private ElementoMultimediale[] elementi = new ElementoMultimediale[5];
 
+    // array di elementi
     public static void main(String[] args) {
         LettoreMultimediale lettore = new LettoreMultimediale();
         lettore.inizializzaElementi();
         lettore.esegui();
     }
 
+    // metodo per inizializzare gli elementi multimediali
     public void inizializzaElementi() {
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < 5; i++) {
@@ -49,6 +53,7 @@ public class LettoreMultimediale {
         }
     }
 
+    // metodo per eseguire gli elementi multimediali
     public void esegui() {
         Scanner scanner = new Scanner(System.in);
         while (true) {

@@ -1,3 +1,7 @@
+package entities;
+
+import interfaces.Riproducibile;
+
 public abstract class ElementoRiproducibile extends ElementoMultimediale implements Riproducibile {
     protected int durata;
 
