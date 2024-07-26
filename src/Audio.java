@@ -16,6 +16,8 @@ public class Audio extends ElementoRiproducibile {
 
     @Override
     public void play() {
-        System.out.println("Riproduzione audio: " + titolo + " per " + durata + " secondi. Volume: " + volume);
+        for (int i = 0; i < durata; i++) {
+            System.out.println(titolo + " " + "!".repeat(volume));
+        }
     }
 }
